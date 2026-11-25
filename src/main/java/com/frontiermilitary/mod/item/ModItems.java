@@ -35,7 +35,7 @@ public final class ModItems {
 
     public static final RegistryObject<Item> FIELD_RATION = ITEMS.register("field_ration",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-                    .nutrition(6).saturationModifier(0.7F).build())));
+                    .nutrition(6).saturationMod(0.7F).build())));
 
     public static final RegistryObject<Item> FIRST_AID_KIT = ITEMS.register("first_aid_kit",
             () -> new FirstAidKitItem(new Item.Properties().stacksTo(8)));
