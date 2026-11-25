@@ -49,7 +49,7 @@ public class FirstAidKitItem extends Item {
             level.playSound(null, player.blockPosition(), SoundEvents.GENERIC_DRINK,
                     SoundSource.PLAYERS, 1.0F, 1.2F);
         }
-        if (!entity.getAbilities().instabuild) {
+        if (!(entity instanceof Player player) || !player.getAbilities().instabuild) {
             stack.shrink(1);
         }
         return stack;
