@@ -11,6 +11,7 @@ buildscript {
 plugins {
     id 'eclipse'
     id 'idea'
+    id 'maven-publish'
 }
 
 apply plugin: 'net.minecraftforge.gradle'
