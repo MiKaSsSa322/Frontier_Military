@@ -2,7 +2,7 @@ package com.frontiermilitary.mod.block;
 
 import com.frontiermilitary.mod.FrontierMilitaryMod;
 import com.frontiermilitary.mod.block.entity.MilitaryCrateBlock;
-import net.minecraft.sounds.SoundType;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.IronBarsBlock;
