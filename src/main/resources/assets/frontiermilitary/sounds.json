@@ -1,0 +1,42 @@
+{
+  "weapon_fire": {
+    "subtitle": "subtitle.frontiermilitary.weapon_fire",
+    "sounds": [
+      {
+        "name": "minecraft:item/crossbow/shoot",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "weapon_reload": {
+    "subtitle": "subtitle.frontiermilitary.weapon_reload",
+    "sounds": [
+      {
+        "name": "minecraft:item/crossbow/loading_middle",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "weapon_dry_fire": {
+    "subtitle": "subtitle.frontiermilitary.weapon_dry_fire",
+    "sounds": [
+      {
+        "name": "minecraft:block/dispenser/fail",
+        "volume": 0.8,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "crate_open": {
+    "subtitle": "subtitle.frontiermilitary.crate_open",
+    "sounds": [
+      {
+        "name": "minecraft:block/chest/open",
+        "volume": 1.0,
+        "pitch": 0.9
+      }
+    ]
+  }
+}

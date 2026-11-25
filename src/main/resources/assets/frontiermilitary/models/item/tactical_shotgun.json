@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "frontiermilitary:item/tactical_shotgun"
+  }
+}

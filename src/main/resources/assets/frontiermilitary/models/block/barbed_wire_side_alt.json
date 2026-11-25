@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/pane_side_alt",
+  "textures": {
+    "pane": "frontiermilitary:block/barbed_wire",
+    "edge": "frontiermilitary:block/barbed_wire_edge"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": false,
+        "east": false,
+        "south": false,
+        "west": false
+      },
+      "apply": {
+        "model": "frontiermilitary:block/barbed_wire_post"
+      }
+    },
+    {
+      "when": {
+        "north": true
+      },
+      "apply": {
+        "model": "frontiermilitary:block/barbed_wire_side"
+      }
+    },
+    {
+      "when": {
+        "east": true
+      },
+      "apply": {
+        "model": "frontiermilitary:block/barbed_wire_side",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": true
+      },
+      "apply": {
+        "model": "frontiermilitary:block/barbed_wire_side_alt"
+      }
+    },
+    {
+      "when": {
+        "west": true
+      },
+      "apply": {
+        "model": "frontiermilitary:block/barbed_wire_side_alt",
+        "y": 90
+      }
+    }
+  ]
+}

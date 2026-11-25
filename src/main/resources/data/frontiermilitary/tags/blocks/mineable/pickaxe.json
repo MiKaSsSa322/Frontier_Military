@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "frontiermilitary:concrete_barrier",
+    "frontiermilitary:military_fence",
+    "frontiermilitary:security_bars",
+    "frontiermilitary:barbed_wire",
+    "frontiermilitary:military_crate"
+  ]
+}

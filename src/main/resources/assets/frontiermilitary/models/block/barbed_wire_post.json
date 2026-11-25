@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/pane_post",
+  "textures": {
+    "pane": "frontiermilitary:block/barbed_wire",
+    "edge": "frontiermilitary:block/barbed_wire_edge"
+  }
+}

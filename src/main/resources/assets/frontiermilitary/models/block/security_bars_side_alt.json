@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/pane_side_alt",
+  "textures": {
+    "pane": "frontiermilitary:block/security_bars",
+    "edge": "frontiermilitary:block/security_bars_edge"
+  }
+}
