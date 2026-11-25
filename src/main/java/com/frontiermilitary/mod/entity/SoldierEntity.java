@@ -81,12 +81,26 @@ public class SoldierEntity extends PathfinderMob {
         }
     }
 
-    @Override
-    public void finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType,
-                               @Nullable net.minecraft.world.entity.SpawnGroupData spawnGroupData) {
-        super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
-        this.homePosition = this.blockPosition();
-    }
+   @Override
+public SpawnGroupData finalizeSpawn(
+        ServerLevelAccessor level,
+        DifficultyInstance difficulty,
+        MobSpawnType spawnType,
+        @Nullable SpawnGroupData spawnGroupData,
+        @Nullable CompoundTag dataTag) {
+
+    SpawnGroupData result = super.finalizeSpawn(
+            level,
+            difficulty,
+            spawnType,
+            spawnGroupData,
+            dataTag
+    );
+
+    this.homePosition = this.blockPosition();
+
+    return result;
+}
 
     public SoldierVariant getVariant() {
         return SoldierVariant.values()[this.entityData.get(DATA_VARIANT) % SoldierVariant.values().length];
