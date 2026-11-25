@@ -2,6 +2,7 @@ package com.frontiermilitary.mod.entity.client;
 
 import com.frontiermilitary.mod.FrontierMilitaryMod;
 import com.frontiermilitary.mod.entity.SoldierEntity;
+
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -17,7 +18,9 @@ public class SoldierRenderer extends HumanoidMobRenderer<SoldierEntity, Humanoid
     public SoldierRenderer(EntityRendererProvider.Context context) {
         super(
             context,
-            new HumanoidModel<>(context.bakeLayer(ModelLayers.PLAYER)),
+            new HumanoidModel<SoldierEntity>(
+                context.bakeLayer(ModelLayers.PLAYER)
+            ),
             0.5F
         );
 
@@ -26,14 +29,17 @@ public class SoldierRenderer extends HumanoidMobRenderer<SoldierEntity, Humanoid
         );
 
         this.addLayer(
-            new HumanoidArmorLayer<
-                SoldierEntity,
+            new HumanoidArmorLayer<SoldierEntity,
                 HumanoidModel<SoldierEntity>,
-                HumanoidModel<SoldierEntity>
-            >(
+                HumanoidModel<SoldierEntity>>(
                 this,
-                new HumanoidModel<>(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
-                new HumanoidModel<>(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))
+                new HumanoidModel<SoldierEntity>(
+                    context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)
+                ),
+                new HumanoidModel<SoldierEntity>(
+                    context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)
+                ),
+                context.getModelManager()
             )
         );
     }
